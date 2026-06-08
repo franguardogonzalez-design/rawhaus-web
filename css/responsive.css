@@ -1,0 +1,73 @@
+@media (max-width: 700px) {
+  .hero h1 {
+    font-size: clamp(3rem, 11vw, 3.75rem);
+  }
+
+  .hero-copy {
+    font-size: 1rem;
+  }
+
+  .hero-inner {
+    padding-bottom: 42px;
+  }
+
+  .hero-actions {
+    gap: 8px;
+    margin-top: 18px;
+  }
+
+  .hero-actions .btn {
+    min-height: 42px;
+    padding: 10px 14px;
+    width: 100%;
+  }
+
+  .hero-note {
+    display: none;
+  }
+
+  .header-actions .btn {
+    display: none;
+  }
+}
+
+@media (max-width: 520px) {
+  h1 {
+    font-size: clamp(3.2rem, 18vw, 4.7rem);
+  }
+
+  .hero {
+    min-height: 78svh;
+  }
+
+  .hero-inner {
+    min-height: 78svh;
+    padding-bottom: 78px;
+  }
+
+  .hero-note {
+    align-items: start;
+    display: grid;
+  }
+
+  .section,
+  .section-tight {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}
+
+@media (min-width: 1120px) {
+  .product-card.featured {
+    grid-column: span 2;
+  }
+
+  .product-card.featured .product-media {
+    aspect-ratio: 1.72;
+  }
+
+  .product-card.featured.category-estanterias .product-media {
+    aspect-ratio: 1.26;
+  }
+
+}

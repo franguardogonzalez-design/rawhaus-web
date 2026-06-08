@@ -1,0 +1,99 @@
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Catalogo RawHaus",
+  "description": "Muebles premium de roble macizo y hierro negro satinado fabricados artesanalmente.",
+  "itemListElement": [
+    {
+      "@type": "Product",
+      "name": "Mesa Auren",
+      "material": "Roble macizo y hierro negro satinado",
+      "brand": { "@type": "Brand", "name": "RawHaus" },
+      "offers": { "@type": "Offer", "priceCurrency": "EUR", "price": "1290" }
+    },
+    {
+      "@type": "Product",
+      "name": "Mesa Varek",
+      "material": "Roble macizo y hierro negro satinado",
+      "brand": { "@type": "Brand", "name": "RawHaus" },
+      "offers": { "@type": "Offer", "priceCurrency": "EUR", "price": "1390" }
+    },
+    {
+      "@type": "Product",
+      "name": "Mesa Laren",
+      "material": "Roble macizo y hierro negro satinado",
+      "brand": { "@type": "Brand", "name": "RawHaus" },
+      "offers": { "@type": "Offer", "priceCurrency": "EUR", "price": "1320" }
+    },
+    {
+      "@type": "Product",
+      "name": "Mesa de centro Luma",
+      "material": "Roble macizo y hierro negro satinado",
+      "brand": { "@type": "Brand", "name": "RawHaus" },
+      "offers": { "@type": "Offer", "priceCurrency": "EUR", "price": "680" }
+    },
+    {
+      "@type": "Product",
+      "name": "Mesa de centro Aral",
+      "material": "Roble macizo y hierro negro satinado",
+      "brand": { "@type": "Brand", "name": "RawHaus" },
+      "offers": { "@type": "Offer", "priceCurrency": "EUR", "price": "720" }
+    },
+    {
+      "@type": "Product",
+      "name": "Mesa de centro Solen",
+      "material": "Roble macizo y hierro negro satinado",
+      "brand": { "@type": "Brand", "name": "RawHaus" },
+      "offers": { "@type": "Offer", "priceCurrency": "EUR", "price": "890" }
+    },
+    {
+      "@type": "Product",
+      "name": "Estanteria Vetra",
+      "material": "Roble macizo y hierro negro satinado",
+      "brand": { "@type": "Brand", "name": "RawHaus" },
+      "offers": { "@type": "Offer", "priceCurrency": "EUR", "price": "980" }
+    },
+    {
+      "@type": "Product",
+      "name": "Estanteria Nara",
+      "material": "Roble macizo y hierro negro satinado",
+      "brand": { "@type": "Brand", "name": "RawHaus" },
+      "offers": { "@type": "Offer", "priceCurrency": "EUR", "price": "1240" }
+    },
+    {
+      "@type": "Product",
+      "name": "Estanteria Liora",
+      "material": "Roble macizo y hierro negro satinado",
+      "brand": { "@type": "Brand", "name": "RawHaus" },
+      "offers": { "@type": "Offer", "priceCurrency": "EUR", "price": "860" }
+    },
+    {
+      "@type": "Product",
+      "name": "Estanteria Arkoa",
+      "material": "Roble macizo y hierro negro satinado",
+      "brand": { "@type": "Brand", "name": "RawHaus" },
+      "offers": { "@type": "Offer", "priceCurrency": "EUR", "price": "1320" }
+    },
+    {
+      "@type": "Product",
+      "name": "Taburete Zeta",
+      "material": "Roble macizo y hierro negro satinado",
+      "brand": { "@type": "Brand", "name": "RawHaus" },
+      "offers": { "@type": "Offer", "priceCurrency": "EUR", "price": "320" }
+    },
+    {
+      "@type": "Product",
+      "name": "Taburete Prisma",
+      "material": "Roble macizo y hierro negro satinado",
+      "brand": { "@type": "Brand", "name": "RawHaus" },
+      "offers": { "@type": "Offer", "priceCurrency": "EUR", "price": "340" }
+    },
+    {
+      "@type": "Product",
+      "name": "Taburete Nexo",
+      "material": "Roble macizo y hierro negro satinado",
+      "brand": { "@type": "Brand", "name": "RawHaus" },
+      "offers": { "@type": "Offer", "priceCurrency": "EUR", "price": "360" }
+    }
+  ]
+}

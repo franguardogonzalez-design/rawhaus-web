@@ -1,0 +1,12 @@
+{
+  "name": "rawhaus-web",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "check": "node --check js/modules/checkout.js && node --check js/modules/cart.js && node --check netlify/functions/create-checkout-session.js"
+  },
+  "dependencies": {
+    "stripe": "^18.0.0"
+  },
+  "devDependencies": {}
+}

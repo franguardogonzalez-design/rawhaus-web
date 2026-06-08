@@ -1,0 +1,380 @@
+﻿.intro-panel {
+  align-items: end;
+  display: grid;
+  gap: 24px;
+}
+
+.material-strip {
+  display: grid;
+  gap: 1px;
+}
+
+.material-item {
+  background: var(--white);
+  padding: 24px;
+}
+
+.image-panel {
+  aspect-ratio: 0.92;
+  background: var(--paper-deep);
+  overflow: hidden;
+}
+
+.image-panel img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.page-hero {
+  padding: clamp(64px, 10vw, 124px) var(--gutter) clamp(36px, 7vw, 76px);
+}
+
+.page-hero h1,
+.product-detail h1 {
+  font-size: clamp(2.8rem, 8vw, 5.7rem);
+}
+
+.page-hero .container {
+  display: grid;
+  gap: 18px;
+}
+
+.catalog-toolbar {
+  align-items: end;
+  display: grid;
+  gap: 18px;
+  margin-bottom: 26px;
+}
+
+.sort-box {
+  justify-self: start;
+  min-width: 220px;
+}
+
+.catalog-section-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.catalog-section {
+  display: grid;
+  gap: 18px;
+}
+
+.catalog-section + .catalog-section {
+  border-top: 1px solid rgba(17, 16, 14, 0.12);
+  margin-top: clamp(26px, 5vw, 56px);
+  padding-top: clamp(26px, 5vw, 56px);
+}
+
+.catalog-section-head h2 {
+  font-size: clamp(2rem, 5vw, 3.6rem);
+}
+
+.catalog-section-products {
+  display: grid;
+  gap: clamp(18px, 3vw, 32px);
+}
+
+.catalog-empty {
+  background: var(--white);
+  border: 1px solid rgba(17, 16, 14, 0.1);
+  color: var(--steel);
+  padding: 22px;
+}
+
+.product-layout {
+  display: grid;
+  gap: clamp(28px, 5vw, 70px);
+}
+
+.product-gallery {
+  display: grid;
+  gap: 12px;
+}
+
+.gallery-main {
+  aspect-ratio: 16 / 9;
+  background: transparent;
+  overflow: hidden;
+}
+
+.gallery-main img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.product-gallery.product-taburete-zeta .gallery-main {
+  aspect-ratio: 4 / 3;
+  background: transparent;
+}
+
+.product-gallery.product-taburete-zeta .gallery-main img {
+  object-fit: cover;
+}
+
+.product-gallery.category-estanterias .gallery-main {
+  aspect-ratio: 4 / 3;
+  background: var(--paper);
+}
+
+.product-gallery.category-estanterias .gallery-main img {
+  object-fit: contain;
+}
+
+.product-gallery.product-mesa-varek[data-active-gallery="2"] .gallery-main,
+.product-gallery.product-mesa-laren[data-active-gallery="2"] .gallery-main {
+  aspect-ratio: 4 / 3;
+  background: transparent;
+}
+
+.product-gallery.product-mesa-varek[data-active-gallery="2"] .gallery-main img,
+.product-gallery.product-mesa-laren[data-active-gallery="2"] .gallery-main img {
+  object-fit: contain;
+  object-position: center;
+}
+
+.gallery-main-empty {
+  align-items: center;
+  color: var(--steel);
+  display: flex;
+  font-size: 0.82rem;
+  font-weight: 760;
+  justify-content: center;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.gallery-thumbs {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+}
+
+.thumb {
+  background: transparent;
+  border: 2px solid transparent;
+  padding: 0;
+}
+
+.thumb[aria-current="true"] {
+  border-color: var(--ink);
+}
+
+.thumb img {
+  aspect-ratio: 1.2;
+  object-fit: cover;
+  width: 100%;
+}
+
+.product-gallery.category-estanterias .thumb img {
+  background: var(--paper);
+  object-fit: contain;
+}
+
+.product-gallery.product-taburete-zeta .thumb img {
+  background: transparent;
+  object-fit: cover;
+}
+
+.product-gallery.product-taburete-zeta .thumb[aria-current="true"] {
+  border-color: transparent;
+}
+
+.product-gallery.product-taburete-prisma .gallery-main {
+  aspect-ratio: 4 / 3;
+  background: transparent;
+}
+
+.product-gallery.product-taburete-prisma .gallery-main img {
+  object-fit: cover;
+}
+
+.product-gallery.product-taburete-prisma .thumb[aria-current="true"] {
+  border-color: transparent;
+}
+
+.product-gallery.product-taburete-nexo .gallery-main {
+  aspect-ratio: 4 / 3;
+  background: transparent;
+}
+
+.product-gallery.product-taburete-nexo .gallery-main img {
+  object-fit: cover;
+}
+
+.product-gallery.product-taburete-nexo .thumb img {
+  background: transparent;
+  object-fit: cover;
+}
+
+.product-gallery.product-taburete-nexo .thumb[aria-current="true"] {
+  border-color: transparent;
+}
+
+.product-detail {
+  display: grid;
+  gap: 22px;
+}
+
+.option-grid {
+  display: grid;
+  gap: 10px;
+}
+
+.option-grid label {
+  align-items: center;
+  border: 1px solid rgba(17, 16, 14, 0.14);
+  display: flex;
+  gap: 10px;
+  padding: 12px;
+}
+
+.option-grid input {
+  accent-color: var(--ink);
+}
+
+.story-kicker {
+  color: var(--oak-dark);
+  font-family: var(--font-serif);
+  font-size: clamp(1.45rem, 4vw, 2.5rem);
+  line-height: 1.12;
+}
+
+.contact-card {
+  background: var(--white);
+  border: 1px solid rgba(17, 16, 14, 0.1);
+  padding: clamp(20px, 4vw, 34px);
+}
+
+.checkout-layout {
+  align-items: start;
+  display: grid;
+  gap: clamp(22px, 4vw, 42px);
+}
+
+.checkout-list {
+  display: grid;
+  gap: 12px;
+}
+
+.checkout-item,
+.checkout-summary {
+  background: var(--white);
+  border: 1px solid rgba(17, 16, 14, 0.1);
+}
+
+.checkout-item {
+  align-items: center;
+  display: flex;
+  gap: 18px;
+  justify-content: space-between;
+  padding: clamp(18px, 3vw, 26px);
+}
+
+.checkout-item-actions {
+  align-items: center;
+  display: flex;
+  gap: 18px;
+}
+
+.checkout-item h2 {
+  font-size: clamp(1.5rem, 3vw, 2.4rem);
+}
+
+.checkout-item strong {
+  font-size: clamp(1.05rem, 2vw, 1.3rem);
+  white-space: nowrap;
+}
+
+.checkout-qty {
+  border: 1px solid rgba(17, 16, 14, 0.16);
+  display: inline-grid;
+  font-size: 0.84rem;
+  font-weight: 800;
+  height: 38px;
+  place-items: center;
+  width: 38px;
+}
+
+.checkout-remove {
+  align-items: center;
+  background: transparent;
+  border: 1px solid rgba(17, 16, 14, 0.16);
+  color: var(--ink);
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 1.35rem;
+  height: 38px;
+  justify-content: center;
+  line-height: 1;
+  padding: 0;
+  width: 38px;
+}
+
+.checkout-remove:hover {
+  border-color: var(--ink);
+}
+
+.checkout-summary {
+  display: grid;
+  gap: 12px;
+  padding: clamp(20px, 4vw, 30px);
+  position: sticky;
+  top: 94px;
+}
+
+.checkout-summary > strong {
+  font-family: var(--font-serif);
+  font-size: clamp(2.1rem, 4vw, 3.4rem);
+  line-height: 1;
+}
+
+.mini-list {
+  display: grid;
+  gap: 10px;
+  list-style: none;
+  margin: 22px 0 0;
+  padding: 0;
+}
+
+.mini-list li {
+  align-items: start;
+  display: grid;
+  gap: 2px;
+}
+
+.mini-list strong {
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+@media (min-width: 820px) {
+  .intro-panel {
+    grid-template-columns: 1fr 0.86fr;
+  }
+
+  .material-strip {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .catalog-toolbar {
+    grid-template-columns: 1fr auto;
+  }
+
+  .sort-box {
+    justify-self: end;
+  }
+
+  .product-layout {
+    align-items: start;
+    grid-template-columns: minmax(0, 1fr) minmax(350px, 0.72fr);
+  }
+
+  .checkout-layout {
+    grid-template-columns: minmax(0, 1fr) minmax(300px, 0.36fr);
+  }
+}

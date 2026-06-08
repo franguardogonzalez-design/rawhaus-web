@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pago completado | RawHaus</title>
+  <meta name="description" content="Pago completado en RawHaus.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@500;650;760;840&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">R</span><span>RawHaus</span></a>
+    <nav class="site-nav" data-nav><a href="index.html">Inicio</a><a href="catalogo.html">Catalogo</a><a href="carrito.html">Carrito</a><a href="contacto.html">Contacto</a></nav>
+  </header>
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Pago completado</p>
+        <h1>Gracias por tu compra.</h1>
+        <p class="lead">Hemos recibido el pago. En breve recibirás la confirmacion de Stripe en tu correo.</p>
+        <div class="cta-row">
+          <a class="btn" href="catalogo.html">Seguir comprando</a>
+          <a class="btn btn-ghost" href="index.html">Volver al inicio</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="footer-grid"><div><a class="brand" href="index.html"><span class="brand-mark">R</span><span>RawHaus</span></a><p class="muted">Muebles premium de roble macizo y hierro negro satinado.</p></div><nav class="footer-nav"><a href="catalogo.html">Catalogo</a><a href="sobre-nosotros.html">Sobre nosotros</a><a href="carrito.html">Carrito</a><a href="contacto.html">Contacto</a></nav></div><div class="footer-bottom"><span>© <span data-year></span> RawHaus</span><span>Compra online RawHaus</span></div></footer>
+  <script src="js/modules/main.js"></script>
+  <script>
+    localStorage.removeItem("rawhaus-cart");
+  </script>
+</body>
+</html>
