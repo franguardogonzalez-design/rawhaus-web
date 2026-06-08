@@ -47,17 +47,22 @@
     payButton.textContent = "Conectando pago";
 
     try {
-      const response = await fetch("/.netlify/functions/create-checkout-session", {
+      const body = JSON.stringify({
+        items: cart.map((item) => ({ id: item.id, qty: item.qty }))
+      });
+      const request = (endpoint) => fetch(endpoint, {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
         },
-        body: JSON.stringify({
-          items: cart.map((item) => ({ id: item.id, qty: item.qty }))
-        })
+        body
       });
-      const data = await response.json();
-      if (!response.ok || !data.url) throw new Error(data.error || "No se pudo iniciar el pago");
+      let response = await request("/.netlify/functions/create-checkout-session");
+      if (response.status === 404) {
+        response = await request("/.netlify/functions/crear-checkout-session");
+      }
+      const data = await response.json().catch(() => ({}));
+      if (!response.ok || !data.url) throw new Error(data.error || `No se pudo iniciar el pago (${response.status})`);
       window.location.href = data.url;
     } catch (error) {
       payButton.disabled = false;
