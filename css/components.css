@@ -66,7 +66,12 @@
 }
 
 .hero {
-  background: linear-gradient(90deg, rgba(17, 16, 14, 0.8), rgba(17, 16, 14, 0.3), rgba(17, 16, 14, 0.04)), var(--ink);
+  background:
+    linear-gradient(90deg, rgba(17, 16, 14, 0.8), rgba(17, 16, 14, 0.3), rgba(17, 16, 14, 0.04)),
+    url("/assets/images/hero/rawhaus-hero.png"),
+    var(--ink);
+  background-position: center;
+  background-size: cover;
   color: var(--white);
   min-height: min(780px, 82svh);
   overflow: hidden;
@@ -75,10 +80,8 @@
 }
 
 .hero::before {
-  background-image: var(--hero-image);
-  background-position: center;
-  background-size: cover;
   content: "";
+  display: none;
   inset: 0;
   position: absolute;
   z-index: 0;
